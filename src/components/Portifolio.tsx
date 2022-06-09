@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import TransformaImg from "../assets/transforma.png";
 import Link from "../assets/link.png";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
-import { EffectCube, Pagination } from "swiper";
 import GitHub from "../assets/github.png";
 import Chosen from "../assets/chosen.png";
 import AtStorage from "../assets/atstorage.png";
@@ -36,8 +34,7 @@ const Portifolio = (): JSX.Element => {
               </TagsStyled>
               <ButtonCardStyled>
                 <a
-                  href="http://sls-landing-page-festivalmiolomole.s3-website.us-east-1.amazonaws.com"
-                  target="_blank"
+                  onClick={() => window.open("http://sls-landing-page-festivalmiolomole.s3-website.us-east-1.amazonaws.com")}
                 >
                   <ButtonWebSite>
                     <CardImg src={Link} alt="link" />
@@ -66,7 +63,7 @@ const Portifolio = (): JSX.Element => {
                 <Tags>PHP</Tags>
               </TagsStyled>
               <ButtonCardStyled>
-                <a href="https://transformabrasil.com.br/" target="_blank">
+                <a onClick={() => window.open("https://transformabrasil.com.br/")}>
                   <ButtonWebSite>
                     <CardImg src={Link} alt="link" />
                     Website

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Linkedin from "../assets/linkedin.png";
 import Seta from "../assets/seta-direita.png";
 import GithubSvg from "../assets/icons8-github.svg";
-import Gmail from "../assets/icons8-gmail.svg";
 import Header from "components/Header";
 import Home from "components/Home";
 import Portifolio from "components/Portifolio";
@@ -25,18 +24,14 @@ const HomePage = (): JSX.Element => {
       <Skills />
       <Contact />
       <Footer>
-        <a href="https://github.com/feliipedev" target="_blank">
+        <a onClick={() => window.open("https://github.com/feliipedev")} target="_blank">
           <ImgFooter src={GithubSvg} alt="icone github" />
         </a>
         <a
-          href="https://www.linkedin.com/in/felipe-monteiro-561a33130/"
-          target="_blank"
+          onClick={() => window.open("https://www.linkedin.com/in/felipe-monteiro-561a33130/")}
         >
           <ImgFooter src={Linkedin} alt="icone linkedin" />
         </a>
-        {/* <a href="mailto:feliipemonteiro901@gmail.com" target="_blank">
-          <ImgFooter src={Gmail} alt="icone gmail" />
-        </a> */}
       </Footer>
     </ScreenContainer>
   );

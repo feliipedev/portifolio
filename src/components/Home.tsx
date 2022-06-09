@@ -21,15 +21,15 @@ const Home = (): JSX.Element => {
             momento com o código eu sabia que era isso que queria da vida
           </Description>
           <FlexContainer>
-            <a href="https://github.com/feliipedev" target="_blank">
+            <a onClick={() => window.open("https://github.com/feliipedev")}>
               <ButtonSocialNetwork>
                 <IconSocialNetwork src={GitHub} />
                 Meu Github
               </ButtonSocialNetwork>
             </a>
             <a
-              href="https://www.linkedin.com/in/felipe-monteiro-561a33130/"
-              target="_blank"
+              onClick={() => window.open("https://www.linkedin.com/in/felipe-monteiro-561a33130/")}
+
             >
               <ButtonSocialNetwork>
                 <IconSocialNetwork src={Linkedin} />
